@@ -1,0 +1,57 @@
+.aboutContainer {
+  padding: 20px;
+}
+
+.aboutHero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.aboutHero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.aboutHero p {
+  color: #666;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.aboutText {
+  flex: 1;
+  text-align: left;
+}
+
+.aboutText h2 {
+  margin-bottom: 10px;
+}
+
+.aboutText p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.aboutText ul {
+  padding-left: 20px;
+}
+
+.aboutImage {
+  flex: 1;
+}
+
+.aboutImage img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .aboutContent {
+    flex-direction: column;
+  }
+}

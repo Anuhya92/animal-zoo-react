@@ -1,0 +1,56 @@
+.contactWrapper {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+.contactBox {
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contactBox h2 {
+  margin-bottom: 5px;
+}
+
+.contactBox p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contactBox form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactBox input,
+.contactBox textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.contactBox button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.contactBox button:hover {
+  background: #388e3c;
+}
