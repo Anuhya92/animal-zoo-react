@@ -11,9 +11,7 @@ function Category() {
     const fetchAnimalsOfType = async () => {
       setLoading(true);
       try {
-        const response = await fetch(
-          `http://localhost:3000/api/category/${type}`,
-        );
+        const response = await fetch(`/api/category/${type}`);
         const data = await response.json();
         setAnimalsOfType(data);
       } catch (error) {
