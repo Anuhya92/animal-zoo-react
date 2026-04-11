@@ -1,0 +1,101 @@
+export default [
+  {
+    id: 1,
+    name: "Lion",
+    type: "Mammal",
+    description:
+      "Lions are large carnivorous mammals known as the 'king of the jungle'. They live in groups called prides and are native to Africa and parts of India.",
+    image:
+      "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1200&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 2,
+    name: "Eagle",
+    type: "Bird",
+    description:
+      "Eagles are powerful birds of prey with excellent vision. They hunt small animals and are known for their strength and soaring flight.",
+    image:
+      "https://images.unsplash.com/photo-1631871147817-74e4265d0da4?w=1200&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 3,
+    name: "Shark",
+    type: "Fish",
+    description:
+      "Sharks are large marine predators that have lived in oceans for millions of years. They have sharp teeth and excellent hunting abilities.",
+    image:
+      "https://images.unsplash.com/photo-1513127399565-023ac4db4766?w=1200&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 4,
+    name: "Seal",
+    type: "Mammal",
+    description:
+      "Seals are marine mammals that spend most of their time in water but come onto land or ice to rest and breed.",
+    image:
+      "https://images.unsplash.com/photo-1763410521133-ef56e937e3b0?w=1200&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 5,
+    name: "Monkey",
+    type: "Mammal",
+    description:
+      "Monkeys are intelligent primates known for their playful behavior and ability to use tools. They live in forests and social groups.",
+    image:
+      "https://images.unsplash.com/photo-1674771951120-f4b1a238deea?w=1200&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 6,
+    name: "Elephant",
+    type: "Mammal",
+    description:
+      "Elephants are the largest land animals on Earth. They are known for their long trunks, strong social bonds, and high intelligence.",
+    image:
+      "https://images.unsplash.com/photo-1601320530220-a5b2f02181e7?w=1200&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 7,
+    name: "Crocodile",
+    type: "Reptile",
+    description:
+      "Crocodiles are large reptiles that live in rivers and wetlands. They are powerful predators with strong jaws and sharp teeth.",
+    image:
+      "https://images.unsplash.com/photo-1560418923-d68efdd9f07a?w=1200&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 8,
+    name: "Penguin",
+    type: "Bird",
+    description:
+      "Penguins are flightless birds that live in cold regions. They are excellent swimmers and use their wings like flippers underwater.",
+    image:
+      "https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?w=1200&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 9,
+    name: "Giraffe",
+    type: "Mammal",
+    description:
+      "Giraffes are the tallest land animals, known for their long necks which help them reach leaves high up in trees.",
+    image:
+      "https://images.unsplash.com/photo-1709082811856-b3cae8dc66f5?w=1200&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 10,
+    name: "Zebra",
+    type: "Mammal",
+    description:
+      "Zebras are African animals known for their black and white striped patterns. Each zebra has a unique stripe pattern.",
+    image:
+      "https://images.unsplash.com/photo-1709972402426-8ade7f33a963?w=1200&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 11,
+    name: "Snake",
+    type: "Reptile",
+    description:
+      "Snakes are legless reptiles that move by slithering. Some species are venomous while others are harmless.",
+    image:
+      "https://images.unsplash.com/photo-1615443594255-9b442bdba186?w=1200&auto=format&fit=crop&q=60",
+  },
+];
