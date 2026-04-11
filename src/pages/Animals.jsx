@@ -10,7 +10,7 @@ const Animals = () => {
     const fetchAnimals = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:3000/api/animals");
+        const response = await fetch("/api/animals");
         const data = await response.json();
         setAnimals(data);
       } catch (error) {

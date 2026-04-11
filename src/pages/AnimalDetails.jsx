@@ -10,7 +10,7 @@ function AnimalDetails() {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`http://localhost:3000/api/animals/${id}`);
+        const response = await fetch(`/api/animals/${id}`);
         const data = await response.json();
         console.log("Fetched data:", data);
         setAnimal(data);

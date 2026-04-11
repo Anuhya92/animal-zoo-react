@@ -1,12 +1,7 @@
 import express from "express";
-import cors from "cors";
 import animals from "./data/animals.js";
 
 const app = express();
-app.use(cors());
-
-// ToDo: Enable it when you want to run the server directly from this file
-// const port = 3000;
 
 app.get("/", (req, res) => {
   res.send("Hello, World!");
@@ -41,8 +36,4 @@ app.get("/api/category/:type", (req, res) => {
   res.json(filteredAnimalsOfType);
 });
 
-/*app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
-*/
 export default app;
