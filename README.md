@@ -6,10 +6,11 @@ So instead of depending on a third-party API, I built my own REST API from scrat
 Project Structure
 zoo-api/
 └── animal-zoo-react/
+    ├── api/
+    │   ├── server.js               #   Express API server
     ├── src/
     │   ├── App.jsx                 # Root component with route definitions
-    │   ├── main.jsx                # React app entry point
-    │   ├── server.js               #   Express API server
+    │   ├── main.jsx                # React app entry point   
     │   ├── data/
     │   │   └── animals.js          # Animal data used by the API
     │   ├── components/
@@ -31,7 +32,7 @@ zoo-api/
     ├── package.json
     └── vite.config.js
 
- API — server.js
+
 Since no free animal API was available, I created my own using Express.js.
 The animal data lives in src/data/animals.js as a local JavaScript array. The Express server reads this data and serves it through HTTP endpoints — making it behave exactly like a real REST API.
 API Endpoints I Built
