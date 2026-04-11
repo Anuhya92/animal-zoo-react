@@ -1,18 +1,25 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AnimalCard from "../components/AnimalCard";
-import { useEffect, useState } from "react";
-import data from "../data/animals.json";
 
 const Animals = () => {
   const [animals, setAnimals] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    // simulate API loading (good for grading)
-    setTimeout(() => {
-      setAnimals(data);
-      setLoading(false);
-    }, 200);
+    const fetchAnimals = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch("http://localhost:3000/api/animals");
+        const data = await response.json();
+        setAnimals(data);
+      } catch (error) {
+        console.error("Error fetching animals:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchAnimals();
   }, []);
 
   // get unique types dynamically
