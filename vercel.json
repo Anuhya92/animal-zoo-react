@@ -1,8 +1,10 @@
 {
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
-    }
+  "routes": [
+    { "src": "/@vite/(.*)", "dest": "/@vite/$1" },
+    { "src": "/@react-refresh(.*)", "dest": "/@react-refresh$1" },
+    { "src": "/src/(.*)", "dest": "/src/$1" },
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/node_modules/(.*)", "dest": "/node_modules/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
