@@ -1,39 +1,24 @@
 import { useParams } from "react-router-dom";
+import data from "../data/animals.json";
 import AnimalCard from "../components/AnimalCard";
-import { useState, useEffect } from "react";
+import styles from "./Category.module.css";
 
 function Category() {
-  const [animalsOfType, setAnimalsOfType] = useState([]);
-  const [loading, setLoading] = useState(false);
   const { type } = useParams();
 
-  useEffect(() => {
-    const fetchAnimalsOfType = async () => {
-      setLoading(true);
-      try {
-        const response = await fetch(`/api/category/${type}`);
-        const data = await response.json();
-        setAnimalsOfType(data);
-      } catch (error) {
-        console.error("Error fetching animals of type:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchAnimalsOfType();
-  }, [type]);
+  const filtered = data.filter(
+    (a) => a.type.toLowerCase() === type.toLowerCase(),
+  );
 
   return (
-    <div>
+    <div className={styles.categoryContainer}>
       <h2>{type.toUpperCase()} ANIMALS</h2>
 
-      {loading ? (
-        <p>Loading animals...</p>
-      ) : animalsOfType.length === 0 ? (
-        <p>No animals found in this category</p>
+      {filtered.length === 0 ? (
+        <p>No animals found</p>
       ) : (
-        <div className="card-container">
-          {animalsOfType.map((animal) => (
+        <div className={styles.cardContainer}>
+          {filtered.map((animal) => (
             <AnimalCard key={animal.id} animal={animal} />
           ))}
         </div>

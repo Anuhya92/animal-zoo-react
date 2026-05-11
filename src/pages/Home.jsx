@@ -1,5 +1,5 @@
-import HeroImage from "../components/HeroImage";
-import Animals from "./Animals";
+import HeroImage from '../components/HeroImage';
+import Animals from './Animals';
 
 function Home() {
   return (

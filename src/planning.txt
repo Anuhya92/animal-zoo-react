@@ -1,0 +1,87 @@
+Animal Explorer Website Plan
+
+1. Project Setup
+  - Create React project using Vite
+  - Install required dependencies
+    - react-router-dom (routing)
+  - Set up project folder structure
+
+2. Project folder structure
+    .src
+        .components
+        .data
+        .layout
+        .pages
+        .styles
+        
+
+3. Data Structure Setup
+  - Create data file (animals.json)
+  - Store animal content with id, name, type, description and image
+
+       
+4. Create Components
+    AnimalCard
+    HeroImage
+    Navbar
+    Footer
+
+5. Navbar:
+   NavLink Home Animals About Contact
+    
+6. Layout Component (with Outlet)
+  - Wraps every page via React Router <Outlet/>
+  - Renders <Navbar/> at top
+  - Renders <Footer/> at bottom
+
+7. Reusable Components and Props
+  - AnimalCard receives animal data using props
+  - Navbar and Footer are reused on every page through Layout
+  - HeroImage is reused on the Home page
+
+8. Router Setup in App.jsx
+    - / Home
+    - /animals Animals
+    - /about About
+    - /contact Contact
+    - /animals/:id AnimalDetails sub route
+    - /animals/category/:type Category sub route
+
+
+9. Home Page
+  - Contains a welcome message with little text.
+  - Shows hero image and animal cards
+
+10. Animals Page (Parent)
+  - Loads animal content from animals.json
+  - Uses state for animals and loading
+  - Renders dynamic category navigation: Mammal | Bird | Fish | Reptile
+  - Renders animal cards
+  
+   
+11. Sub Pages:
+  
+  - AnimalDetails page shows one animal using the route id
+  - Category page filters animals by type
+  - Each card shows name, image and type
+  - Details page shows name, description, image and type
+
+12. Contact Page
+  - Create a contact form
+  - Include name, email and message fields
+  - Include a send button
+
+13. About Page
+  - About the Animal Explorer and our animal
+  - Our Mission
+  - Information about Animal Explorer
+  - Image
+  - What we offer details
+
+14. Footer Component
+  - Copyright + year 
+
+15. Responsive Design
+  - Use CSS modules for page and component styling
+  - Use responsive grid for animal cards
+  - Use media queries for navbar, hero image, about page and details page

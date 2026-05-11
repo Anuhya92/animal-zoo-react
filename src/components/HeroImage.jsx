@@ -1,14 +1,14 @@
-import React from "react";
+import styles from './HeroImage.module.css';
 
-const HeroImage = () => {
+function HeroImage() {
   return (
-    <section className="hero">
-      <div className="overlay">
+    <section className={styles.hero}>
+      <div className={styles.overlay}>
         <h1>Welcome to Animal Explorer</h1>
         <p>Discover amazing animals from around the world</p>
       </div>
     </section>
   );
-};
+}
 
 export default HeroImage;

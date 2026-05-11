@@ -1,0 +1,53 @@
+/* Details page */
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.detailsCard {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.detailsCard img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.detailsContent {
+  padding: 20px;
+  text-align: left;
+}
+
+.detailsContent h2 {
+  margin-bottom: 10px;
+}
+
+.detailsContent p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .detailsCard img {
+    height: 220px;
+  }
+
+  .detailsContent {
+    padding: 15px;
+  }
+}
+.animalsContainer {
+  margin-top: 20px;
+}
+.animalsContainer h2 {
+  font-size: 2em;
+}
